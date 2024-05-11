@@ -70,6 +70,60 @@ body {
     animation: nav-items-hover .6s forwards;
 }
 
+.hours .background-image {
+    max-height: 700px;
+    overflow: hidden;
+    z-index: -99;
+}
+
+.hours .background-image img {
+    width: 100%;
+    filter: contrast(50%) brightness(50%) sepia(10%);
+}
+
+.hours .shop-hours {
+    z-index: 0;
+    color: white;
+    text-align: center;
+    position: absolute; /*relative*/
+    left: 50%;
+    transform: translate(-50%, -220%);
+}
+
+.hours .shop-hours h3 {
+    font-size: 35px;
+    margin: 10px;
+}
+
+.hours .shop-hours ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.hours .shop-hours ul li {
+    margin: 5px 0 5px 0;
+}
+
+.hours .walk-ins {
+    z-index: 0;
+    color: white;
+    text-align: center;
+    position: absolute; /*relative*/
+    left: 50%;
+    transform: translate(-50%, -150%);
+    padding: 13px 0 13px 0;
+    width: 100%;
+}
+
+.hours .walk-ins h3 {
+    font-size: 23px;
+    margin: 15px;
+}
+
+.hours .walk-ins p {
+    line-height: 30px;
+}
+
 /*animations*/
 @keyframes nav-items-hover {
     0% {
@@ -98,6 +152,37 @@ body {
     .socials-items img {
         width: 25px;
     }
+    .hours .background-image {
+        max-height: 450px;
+    }
+    .hours .shop-hours {
+        transform: translate(-50%, -190%);
+    }
+    .hours .shop-hours h3 {
+        font-size: 25px;
+        margin: 10px;
+    }
+    .hours .shop-hours ul {
+        list-style-type: none;
+        font-size: 15px;
+    }
+    .hours .shop-hours ul li {
+        margin: 5px 0 5px 0;
+    }
+    .hours .walk-ins {
+        transform: translate(-50%, -120%);
+        padding: 13px 0 13px 0;
+    }
+    
+    .hours .walk-ins h3 {
+        font-size: 19px;
+        margin: 12px;
+    }
+    
+    .hours .walk-ins p {
+        line-height: 23px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -113,5 +198,83 @@ body {
     }
     .socials-items img {
         width: 22px;
+    }
+    .hours .background-image {
+        max-height: 350px;
+    }
+    .hours .shop-hours {
+        transform: translate(-50%, -180%);
+    }
+    .hours .shop-hours h3 {
+        font-size: 21px;
+        margin: 10px;
+    }
+    .hours .shop-hours ul {
+        list-style-type: none;
+        font-size: 12px;
+    }
+    .hours .shop-hours ul li {
+        margin: 5px 0 5px 0;
+    }
+    .hours .walk-ins {
+        transform: translate(-50%, -120%);
+        padding: 13px 0 13px 0;
+    }
+    
+    .hours .walk-ins h3 {
+        font-size: 15px;
+        margin: 10px;
+    }
+    
+    .hours .walk-ins p {
+        line-height: 19px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header .logo img {
+        width: 250px;
+    }
+    .header .contact {
+        font-size: 14px;
+    }
+    .header .navbar .nav-items {
+        font-size: 12px;
+        padding: 12px;
+    }
+    .socials-items img {
+        width: 22px;
+    }
+    .hours .background-image {
+        max-height: 300px;
+    }
+    .hours .shop-hours {
+        transform: translate(-50%, -180%);
+    }
+    .hours .shop-hours h3 {
+        font-size: 19px;
+        margin: 8px;
+    }
+    .hours .shop-hours ul {
+        list-style-type: none;
+        font-size: 10px;
+    }
+    .hours .shop-hours ul li {
+        margin: 3px 0 3px 0;
+    }
+    .hours .walk-ins {
+        transform: translate(-50%, -120%);
+        padding: 13px 0 13px 0;
+    }
+    
+    .hours .walk-ins h3 {
+        font-size: 13px;
+        margin: 10px;
+    }
+    
+    .hours .walk-ins p {
+        line-height: 15px;
+        font-size: 10px;
     }
 }
