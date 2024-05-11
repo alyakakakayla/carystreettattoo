@@ -179,6 +179,27 @@ body {
     transform: translate(-50%, 950%);
 }
 
+.footer {
+    padding: 35px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer .bold {
+    font-weight: 700;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    font-weight: 700;
+}
+
 /*animations*/
 @keyframes nav-items-hover {
     0% {
