@@ -7,6 +7,23 @@ body {
     font-family: 'Raleway', 'Arial', sans-serif;
 }
 
+.disclaimer-wrapper .disclaimer {
+    text-align: center;
+    background-color: beige;
+    color: black;
+    /*border-radius: 20px;*/
+    border-width: 3px;
+    border-color: beige;
+    padding: 10px;
+}
+
+.disclaimer-wrapper .disclaimer a {
+    color: black;
+}
+.disclaimer-wrapper .disclaimer a:hover {
+    font-weight: 700;
+}
+
 .header {
     color: black;
     background-color: white;
@@ -307,6 +324,12 @@ body {
 }
 
 @media (max-width: 768px) {
+    .disclaimer-wrapper .disclaimer h3 {
+        font-size: 15px;
+    }
+    .disclaimer-wrapper .disclaimer p {
+        font-size: 14px;
+    }
     .header .logo img {
         width: 400px;
     }
@@ -388,9 +411,18 @@ body {
     .gallery .view-gallery a:hover {
         animation: gallery-hover-extend 0.6s forwards;
     }
+    .footer {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 480px) {
+    .disclaimer-wrapper .disclaimer h3 {
+        font-size: 12px;
+    }
+    .disclaimer-wrapper .disclaimer p {
+        font-size: 10px;
+    }
     .header .logo img {
         width: 270px;
     }
@@ -437,6 +469,9 @@ body {
     .hours .walk-ins p {
         line-height: 19px;
         font-size: 12px;
+    }
+    .footer {
+        font-size: 11px;
     }
 }
 
